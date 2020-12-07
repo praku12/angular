@@ -1,0 +1,129 @@
+<div>
+<p>&nbsp;
+</p> 
+
+</div>
+<div class="app-body">
+    <main class="main d-flex align-items-center">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-10 mx-auto">
+            <div class="card-group">
+              <div class="card">  
+                <div class="hero-image">
+                  <div class="text-block">
+                    <img src="assets\img\DXWalkin helps you find the perfect Hire _.png" style="width: 500px;">
+                    <h4 style="color:rgb(237, 237, 243)">Our solutions drive the future of hiring.</h4>
+                  </div>
+                </div>
+        
+            </div>
+              <div class="card py-1 px-1">
+                <div class="card-body">
+                    <div class="imgcontainer">
+                      <img src="assets\img\logo.png" >
+                    </div>
+                    <div class="a" >
+                      <h3>{{title}}</h3>
+                  </div>
+                    <form  #userForm="ngForm" (ngSubmit)="onSubmit()" >
+                      <!-- {{userForm.value| json}} -->
+                      <!-- {{userForm.form.valid}} -->
+                    <div class="row" align="center">
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <span>
+                                <img src="https://static.thenounproject.com/png/2072304-200.png" style="width: 100px;height:100px;border-radius: 50%;
+                                "/>
+                                </span>       
+                        </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name">First Name</label>
+                          <input  [(ngModel)]="fname"  #fnamefield="ngModel" type="text" class="form-control"
+                           [class.is-invalid]="fnamefield.invalid && fnamefield.touched" name="fname"  placeholder=" First Name" 
+                            required emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [pattern]="emailPattern" >
+                          <small class="text-danger" [class.d-none]="fnamefield.valid || fnamefield.untouched">First Name field is required</small>
+                         
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name">Last Name</label>
+                          <input  [(ngModel)]="lname"  #lnamefield="ngModel" type="text" class="form-control"
+                           [class.is-invalid]="lnamefield.invalid && lnamefield.touched" name="lname"  placeholder=" Last Name" 
+                            required emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [pattern]="emailPattern" >
+                          <small class="text-danger" [class.d-none]="lnamefield.valid || lnamefield.untouched">Last Name field is required</small>
+                         
+                        </div>
+                      </div>
+                    </div><!--/.row-->
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name">Company Email</label>
+                          <input  [(ngModel)]="email"  #emailfield="ngModel" type="email" class="form-control"
+                           [class.is-invalid]="emailfield.invalid && emailfield.touched" name="email"  placeholder=" Company Emai" 
+                            required emailPattern = "^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" [pattern]="emailPattern" [email]="true" >
+                          <small class="text-danger" [class.d-none]="emailfield.valid || emailfield.untouched">Email field is required and must be in correct</small>
+                          <!-- <div *ngIf="emailfield.errors && (emailfield.invalid || emailfield.touched )">
+                            <small class="text-danger" *ngIf="emailfield.errors.required" >Email is required</small>
+                            <small class="text-danger" *ngIf="emailfield.errors.pattern">Please Enter Proper email Format</small>
+                          </div> -->
+                        </div>
+                      </div>
+                      <div class="col-sm-6">
+                        <div class="form-group">
+                          <label for="name">Phone</label>
+                          <input  [(ngModel)]="phone"  #phonefield="ngModel" type="Number" class="form-control"
+                           [class.is-invalid]="phonefield.invalid && phonefield.touched" name="phone" pattern="^\d{10}$"  placeholder=" Phone number" 
+                            required >
+                          <small class="text-danger" [class.d-none]="phonefield.valid || phonefield.untouched">Phone Number field is required and must be 10 digits</small>
+                        
+                           <!-- <div *ngIf="phonefield.errors && (phonefield.invalid || phonefield.touched)">
+                            <small class="text-danger" *ngIf="phonefield.errors.required" >phone field is required</small>
+                            <small class="text-danger" *ngIf="phonefield.errors.pattern">phone field should be 10 digits</small>
+                          </div> -->
+                         
+                        </div>
+                      </div>
+                    </div><!--/.row-->
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="name">Headline</label>
+                            <input  type="text" class="form-control" #headlinefield="ngModel" name="headline"
+                            [class.is-invalid]="headlinefield.invalid && headlinefield.touched" [(ngModel)]="headline" placeholder="Headlines" required>
+                            <small class="text-danger" [class.d-none]="headlinefield.valid || headlinefield.untouched">Headline field is required</small>
+
+                          </div>
+                        </div>
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                             <label for="ccnumber">About You</label>
+                            <input  type="text" class="form-control" #aboutfield="ngModel" 
+                            [class.is-invalid]="aboutfield.invalid && aboutfield.touched" name="aboutYou" [(ngModel)]="aboutYou"  placeholder="About You" required>
+                            <small class="text-danger" [class.d-none]="aboutfield.valid || aboutfield.untouched">About you field is required</small>
+
+                          </div>
+                        </div>
+                      </div><!--/.row-->
+                    <div class="row">
+                      <div class="col-12" style="text-align: center;">
+                        <button [disabled]="userForm.form.invalid" type="submit" class="btn btn-primary btn-lg px-7 btn-block" style="background-color: blue;" >Continue</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  

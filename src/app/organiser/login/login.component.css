@@ -1,0 +1,70 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("https://i.pinimg.com/originals/46/f7/33/46f733c4194e4953a10d9ce54c6764e6.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 100%;
+}
+
+div.a {
+  text-align: center;
+}
+
+form {
+  padding-top: 5%;
+}
+
+#mmenu_screen>.row {
+  min-height: 100vh;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.OuterDiv {
+  padding: 15% 15% 15% 15%
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.text-black {
+  color: black;
+}
+
+@media (min-width: 576px) and (max-width:1000px) {
+  .col-sm-6 {
+      margin-left: 23%;
+  }
+}
+
+@media (max-width:1000px) {
+  .hide6 {
+      display: none;
+  }
+}

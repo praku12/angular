@@ -1,0 +1,122 @@
+
+<mat-toolbar>
+    <h5 class="form-group walkintype" style="margin-left:9%;color: mintcream;">
+        Group Discussion Room
+    </h5>
+  </mat-toolbar>
+  <div class="rightsidemenu" style="text-align: center;">
+     <a href="#" ><img src="assets/img/Slider Arrow Right.png" alt=""></a><br>
+     <a href="#"  ><img src="assets/img/chat.png" alt=""></a>
+     <a href="#"  ><img src="assets/img/Candidates.png" alt=""></a>
+     <a href="#"  ><img src="assets/img/Vector (3).png" alt=""></a>
+     <a href="#" ><img src="assets/img/Candidates.png" alt=""></a>
+  </div>
+  <div style="margin-left:39%;color: rgb(239, 240, 243);">
+    <p> We are Waiting for you</p>
+      </div>
+<div class="card" style="width:29%;margin-left:30%;">
+    <img class="card-img-top" src="assets/img/O5MC2V0 4.png" alt="Card image cap">
+    <!-- <div class="card-img-overlay" > -->
+        <div class="button"><small><strong>You</strong></small></div> 
+    <!-- </div> -->
+   
+</div>
+<br>
+<br>
+<div>
+    <button class="btn btn-primary btn-md" style="background-color:#364DFF;width:30%;
+    height:30%;margin-left:30%;">Start</button><br><br>
+</div>
+<form>
+<div class="card" style="width:75%;margin-left:10%;" >
+    <div class="card-body" >
+
+        <div class="form-group container">
+            <h5 class="alignleft">Candidate List</h5>
+            <p class="aligncenter"><input [(ngModel)]="name" name="name"  type="text" style="background-color: #2d3444;"><button class="btn btn-primary btn-md" style="background-color:#364DFF;">
+                <i class="fa fa-search"></i></button></p>
+            <a  (click)="print()"><p class="alignright" style="color: royalblue;"><img src="assets/img/print.png"><strong>Print</strong></p></a>
+            <div id="print-section">
+            <table class="form-group table" style="min-width:0px !important; " >
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Name</th>
+                  <th scope="col"> Email</th>
+                   <th scope="col" >Resume</th>
+                  <th scope="col">Headline</th>
+                  <th scope="col">Status</th>
+                  <th scope="col">Move To</th>
+            
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let customer of candidates | customerEmailFilter:name;let i = index">
+
+                  <td scope="row">{{i+1}}</td>
+                  <td>{{customer.name}}</td>
+                  <td>{{customer.email}}</td>
+                  <td>Resume.pdf</td>
+                  <td>Angular fresher</td>
+                  <td ><select id="green" class="form-control">
+                    <option ><strong>Select</strong></option>
+                    <option ><span>&#10004;</span><strong>selected</strong></option>
+                    <option><span>&#10060;</span>rejected</option><option><span>&#9995;</span><strong>Hold</strong></option></select></td>
+                  <td><select  id="black" class="form-control"><option>HR Round</option>
+                    <option>Technical Round</option></select></td> 
+                </tr>
+                <!-- <tr>
+                    <td scope="row">2</td>
+                    <td>prakash</td>
+                    <td>prakash@gmail.com</td>
+                    <td>Resume.pdf</td>
+                    <td>Angular fresher</td>
+                    <td ><select id="green" class="form-control"><option >selected</option>
+                      <option>rejected</option><option>Hold</option></select></td>
+                    <td><select id="black" class="form-control"><option>HR Round</option>
+                      <option>Technical Round</option></select></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>prakash</td>
+                    <td>prakash@gmail.com</td>
+                    <td>Resume.pdf</td>
+                    <td>Angular fresher</td>
+                    <td ><select id="green" class="form-control"><option >selected</option>
+                      <option>rejected</option><option>Hold</option></select></td>
+                    <td><select id="black" class="form-control"><option>HR Round</option>
+                      <option>Technical Round</option></select></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">4</td>
+                    <td>prakash</td>
+                    <td>prakash@gmail.com</td>
+                    <td>Resume.pdf</td>
+                    <td>Angular fresher</td>
+                    <td ><select id="green" class="form-control"><option >selected</option>
+                      <option>rejected</option><option>Hold</option></select></td>
+                    <td><select id="black" class="form-control"><option>HR Round</option>
+                      <option>Technical Round</option></select></td>
+                  </tr>
+                  <tr>
+                    <td scope="row">5</td>
+                    <td>prakash</td>
+                    <td>prakash@gmail.com</td>
+                    <td>Resume.pdf</td>
+                    <td>Angular fresher</td>
+                    <td ><select id="green" class="form-control"><option >selected</option>
+                      <option>rejected</option><option>Hold</option></select></td>
+                    <td><select id="black" class="form-control"><option>HR Round</option>
+                      <option>Technical Round</option></select></td>
+                  </tr> -->
+           
+              </tbody>
+            </table>
+        </div>
+          </div>
+    
+    </div>
+  </div>
+  
+</form>
+

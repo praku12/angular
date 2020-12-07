@@ -1,0 +1,225 @@
+.box{
+position: absolute;
+width: 30%;
+height:auto;
+background: #FFFFFF;
+/* Placeholder color */
+/* text-align: right; */
+text-align: center;
+margin-left:60%;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+border-radius: 8px;
+margin-top: 0;
+}
+.card-body{
+
+height:auto;
+}
+
+.live{
+text-align: center;color: ghostwhite;position: absolute;
+width: 73px;
+height: 30px;
+right: 19px;
+
+/* Red (CF1212) */
+background: #CF1212;
+border-radius: 6px;
+}
+.card{
+background: #1D222F;
+color:white;
+
+}
+.box{
+background: #2d3444;
+
+}
+.button{
+position: absolute;
+width:15%;
+height:10%;
+/* left: 451px;
+top: 590px; */
+margin-top: 57%;
+margin-left: 1%;
+text-align: center;
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.rightsidemenu{
+position: absolute;
+width:2.5%;
+height:30%;
+left: 97.5%;
+top:12%;
+background: #000000;
+border-radius: 10px 0px 0px 10px;
+}
+.alignleft {
+float: left;
+width:33.33333%;
+text-align:left;
+}
+.aligncenter {
+float: left;
+width:33.33333%;
+text-align:right;
+}
+.alignright {
+float: left;
+width:33.33333%;
+text-align:right;
+}
+body{
+background:#ddd;
+}
+.form-control-borderless {
+border: none;
+}
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+border: none;
+outline: none;
+box-shadow: none;
+}
+#green{
+color: rgb(243, 250, 246);
+}
+#green option { color: black; }
+#green option:first-child{
+color: rgb(10, 10, 10);
+}
+#green1{
+color:black;
+}
+
+#green1 option { color:black; }
+#green1 option:first-child{
+color:white;
+}
+#color{
+color:black;
+}
+
+#color option { color:black; }
+#color option:first-child{
+color:white;
+}
+
+
+
+.card{
+background: #1D222F;
+color:white;
+
+}
+.box{
+background: #2d3444;
+
+}
+.table{
+color:white;
+
+}
+select{
+background-color: #2d3444;
+}
+
+select option {
+margin: 40px;
+background: white;
+color:rgb(8, 8, 8);
+text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+text-align: center;
+}
+
+select#color option[value="Selected"]   { color: springgreen; background-image:url('assets/img/select.png');   }
+select#color option[value="Rejected"]   { background-image:url('assets/img/reject.png');   }
+
+select#color option[value="Hold"]   { background-image:url('assets/img/hold.png');   }
+
+.icon-play {
+background-image : url('assets/img/select.png') no-repeat;
+background-position: center center;
+height: 15px;
+width: 15px;
+}
+tr td{
+min-width: 10px;
+}
+
+#color option[value="Selected"]
+{
+color: springgreen;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 90px;
+    height: 34px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+     border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 23px;
+    width: 23px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #2ab934;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(55px);
+  }
+  
+  /*------ ADDED CSS ---------*/
+  .slider:after
+  {
+   content:'CLOSED';
+   color: white;
+   display: block;
+   position: absolute;
+   transform: translate(-50%,-50%);
+   top: 50%;
+   left: 51%;
+   font-size: 9px;
+   font-family: Verdana, sans-serif;
+  }
+  
+  input:checked + .slider:after
+  {  
+    content:'OPEN';
+  }
+

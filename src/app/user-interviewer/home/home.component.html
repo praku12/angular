@@ -1,0 +1,272 @@
+ 
+
+<!-- <div class="home">
+    <div class="container-fluid">
+    <mat-toolbar>
+    <h5 class="form-group walkintype" style="margin-left: 5px;">
+        ongoing-interview
+    </h5>
+</mat-toolbar>
+
+<mat-toolbar>
+    <div class="hiring_status ">
+       
+        <img src="assets/img/Rectangle.png" style="width: 100%;">
+        <div class="text-block">
+            <p style="margin-bottom: 0px;text-align: center;"> Android Developer</p>
+            <small>Skills: Java, Android Studio..</small><br>
+            <small>Experience: 0-3 Years</small>
+          </div>
+          <div class="text-center">
+            <p style="margin-bottom: 0px;text-align: center;">Banglore</p>
+          
+          </div>
+          <div class="text-right">
+            <p class="live" style="background-color: red;margin-bottom: 0px;text-align: center;">Live</p>
+            <small>Salary Package: NA.</small><br>
+            <small>Vacancies: 3</small>
+           
+           
+          </div>
+        <p class="alignleft"><strong>Hiring Status</strong></p>
+        <p class="alignright hide"><button class="downarrow" style="background: transparent;border: none !important;" (click)="view()" id="button"><i class="arrow up"></i></button></p>
+        <div  style="display: none;" class="ongoing_content">
+          <p style="color: mediumblue;font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+          <small style="font-size: xx-small;"><strong>Total Candidates<br>
+            Selected in Screnning</strong></small>
+          
+        
+        </div>
+        <div style="display: none;" class="ongoing_content1">
+          
+          <p style="color: rgb(211, 94, 166);font-family: Avenir;font-weight:900px;font-size:25px;" >0</p>
+          <small style="font-size: xx-small;"><strong>Total Candidates<br>Selected in Aptitude</strong></small>
+        
+        </div>
+        <div style="display: none;" class="ongoing_content2">
+          <p style="color: rgb(153, 193, 226);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+          <small style="font-size: xx-small;"><strong>Total Candidates<br>Selected in Face to Face</strong></small>
+        
+        </div>
+        <div style="display: none;" class="ongoing_content3">
+          <p style="color: rgb(211, 137, 27);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+          <small style="font-size: xx-small;"><strong>Total Candidates<br>Selected in HR Interview</strong></small>
+        
+        </div>
+        <p  style="display:none"class="alignright show"><button class="uparrow" style="background: transparent;border: none !important;" (click)="hide()" id="button"><i class="arrow down"></i></button></p>
+
+   </div>
+</mat-toolbar>
+   <br>
+    <mat-toolbar>
+    <h5 class="walkintype" style="margin-left:5px;">
+        upcoming-interview
+    </h5>
+</mat-toolbar>
+<li *ngFor='let in of counter(2) ;let i = index'>
+<mat-toolbar>
+    <div class="hiring_status">
+        <img src="assets/img/Rectangle.png" style="width: 100%;">
+        <div class="text-block">
+            <p style="margin-bottom: 0px;text-align: center;">Android Developer</p>
+            <small>Skills: Java, Android Studio..</small><br>
+            <small>Experience: 0-3 Years</small>
+          </div>
+
+          <div class="text-center">
+            <p style="margin-bottom: 0px;text-align: center;">Banglore</p>
+          
+          </div>
+
+          <div class="text-right">
+            <p style="margin-bottom: 0px;text-align: center;">19th Oct, 2020, 10:30 am</p>
+            <small>Salary Package: NA.</small><br>
+            <small>Vacancies: 3</small>
+          </div>      
+        <p class="alignleft"><strong>Hiring Status</strong></p>
+        <p class="alignright"><button style="background: transparent;border: none !important;" (click)="view1()"><i class="arrow up"></i></button></p>
+    
+   </div>
+</mat-toolbar>
+</li>
+<br>
+</div>
+  
+</div> -->
+
+
+
+
+
+ 
+
+
+<!-- Live -->
+<mat-toolbar>
+  <h5 class="form-group walkintype" style="margin-left:9%;">
+      ongoing-interview
+  </h5>
+</mat-toolbar>
+<div class="container-fluid ">
+<div style="background-image:url('assets/img/Rectangle.png');">
+  <div class="row m-0 p-2">
+  <div class="col-sm-4">
+    <p class="card-text" style="color: mintcream;"><img src="assets/img/case.png"> &nbsp;Android Developer</p>
+    <small class="card-text" style="color: mintcream;">Skills: Java, Android Studio..</small>
+    <p class="card-text" style="color: mintcream;">Experience: 0-3 Years</p>
+  </div>
+  <div class="col-sm-4" style="text-align: center">
+    <p class="card-text" style="color: mintcream;"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;banglore</p>
+  </div>
+  <div class="col-sm-4" style="text-align: right;">
+    <!-- <small class="live"><span >&#8226;</span>Live</small> -->
+    <p class="card-text1" style="color: mintcream;"><span class="live">&#8226;Live</span></p>
+    <p class="card-text1" style="color: mintcream;">Salary Package: NA.</p>
+    <small class="card-text1" style="color: mintcream;">Vacancies: 3</small>
+  </div>
+</div>
+  <div style="background-color:white;" class="div_extra div_extra">
+    <h5 class="card-text">Hiring status</h5>
+    <div class="row m-0 ">
+    <div style="display: none;text-align: center;" class="ongoing_content col-sm-3 col-6 p-2">
+      <div>
+        <p style="color: rgb(82, 27, 211);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+      <small style="font-size: xx-small;"><strong>Total Candidates<br>&nbsp;&nbsp;Selected in HR Interview&nbsp;&nbsp;</strong></small>
+      </div>
+    </div>
+    <div style="display: none; text-align: center;" class="ongoing_content1 col-sm-3 col-6 p-2">
+          <div>
+      <p style="color: rgb(211, 94, 166);font-family: Avenir;font-weight:900px;font-size:25px;" >0</p>
+      <small style="font-size: xx-small;"><strong>Total Candidates<br>&nbsp;&nbsp;&nbsp;Selected in Aptitude&nbsp;&nbsp;&nbsp;</strong></small>
+    </div>
+    </div>
+    <div style="display:none;text-align: center;" class="ongoing_content2 col-sm-3 col-6 p-2">
+      <div>
+      <p style="color: rgb(153, 193, 226);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+      <small style="font-size: xx-small;"><strong>Total Candidates<br>&nbsp;&nbsp;Selected in Face to Face&nbsp;&nbsp;</strong></small>
+    </div>
+    </div>
+    <div style="display: none;text-align: center;" class="ongoing_content3 col-sm-3 col-6 p-2">
+      <div>
+      <p style="color: rgb(211, 137, 27);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+      <small style="font-size: xx-small;"><strong>Total Candidates<br>&nbsp;&nbsp;Selected in HR Interview&nbsp;&nbsp;</strong></small>
+    </div></div>
+    <p  style="display:none"class="alignright show"><button class="uparrow" style="background: transparent;border: none !important;" (click)="hide()" id="button"><i class="arrow down"></i></button></p>
+
+  </div>
+    <p class="alignright hide"><button class="downarrow" style="background: transparent;border: none !important;" (click)="view()" id="button"><i class="arrow up"></i></button></p>
+  </div>
+</div>
+</div>
+<br>
+
+<mat-toolbar>
+  <h5 class="form-group walkintype" style="margin-left:9%;">
+      upcoming-interview
+  </h5>
+</mat-toolbar>
+<li *ngFor='let in of counter(2) ;let i = index'>
+<div class="container-fluid">
+<div style="background-image:url('assets/img/Rectangle.png');">
+  <div class="row"> 
+  <div class="col-sm-4">
+    <p class="card-text" style="color: mintcream;"><img src="assets/img/case.png"> &nbsp;Android Developer</p>
+    <small class="card-text" style="color: mintcream;">Skills: Java, Android Studio..</small>
+    <p class="card-text" style="color: mintcream;">Experience: 0-3 Years</p>
+  </div>
+  <div class="col-sm-4" style="text-align: center">
+    <p class="card-text" style="color: mintcream;"><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;banglore</p>
+  </div>
+  <div class="col-sm-4" style="text-align: right;">
+    <!-- <h5 class="live"><span style="font-size: large;">&#8226;</span>Live</h5> -->
+    <p class="card-text1" style="color: mintcream;">20th Oct, 2020, 10:30 am</p>
+    <p class="card-text1" style="color: mintcream;">Salary Package: NA.</p>
+    <small class="card-text1" style="color: mintcream;">Vacancies: 3</small>
+  </div>
+</div> 
+  <div style="background-color:white;"  class="div_extra1"  id="div_{{i}}">
+    <h5 class="card-text">Hiring status</h5> 
+    <div class="row">
+    <div style="display: none;text-align: center;" class="col-sm-4 upgoing_content" id="upgoing_content_{{i}}">
+      <p style="color: rgb(82, 27, 211);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+      <small style="font-size:10px;"><strong>Total Candidates<br>Selected in HR Interview</strong></small>
+    </div>
+    <div style="display: none; text-align: center;" class="col-sm-4 upgoing_content1" id="upgoing_content1_{{i}}">  
+      <p style="color: rgb(211, 94, 166);font-family: Avenir;font-weight:900px;font-size:25px;" >0</p>
+      <small style="font-size: 10px;"><strong>Total Candidates<br>&nbsp;Selected in &nbsp;Aptitude</strong></small>
+    
+    </div>
+    <div style="display:none;text-align: center;" class="col-sm-4 upgoing_content2" id="upgoing_content2_{{i}}">
+      <p style="color: rgb(153, 193, 226);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+      <small style="font-size: 10px;"><strong>Total Candidates<br>Selected in Face to Face</strong></small>
+    
+    </div>
+    <div style="display: none;text-align: center;" class="col-sm-4 upgoing_content3" id="upgoing_content3_{{i}}">
+      <p style="color: rgb(211, 137, 27);font-family: Avenir;font-weight:900px;font-size:25px;">0</p>
+      <small style="font-size:10px;"><strong>Total Candidates<br>Selected in HR Interview</strong></small>
+    
+    </div>
+  </div>
+    <p class="alignright hide1" id="hide1_{{i}}"><button class="downarrow" style="background: transparent;border: none !important;" (click)="view1(i)" id="button"><i class="arrow up"></i></button></p>
+    <p  style="display:none"class="alignright show1" id="show1_{{i}}"><button class="uparrow" style="background: transparent;border: none !important;" (click)="hide1(i)" id="button"><i class="arrow down"></i></button></p>    <br>
+    <br>
+   
+  </div>
+</div>
+</div>
+</li>
+
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<mat-toolbar>
+  <h5 class="form-group walkintype" style="margin-left:12%;">
+      upcoming-interview
+  </h5>
+</mat-toolbar>
+<li *ngFor='let in of counter(2) ;let i = index'>
+ <div class="card mb-3">
+  <img class="card-img-top" src="assets/img/Rectangle.png" alt="Card image cap" style="height: auto;">
+  <div class="card-img-overlay">
+    <p class="card-title" style="color: mintcream;">Android Developer</p>
+    <small class="card-text" style="color: mintcream;">Skills: Java, Android Studio..</small>
+    <p class="card-text" style="color: mintcream;">Experience: 0-3 Years</p>
+  </div>
+  <div class="card-img-overlay" style="text-align: right;">
+    <small class="card-text" style="background-color: rgb(247, 9, 9);">LIVE</small>
+  <p class="card-text" style="color: mintcream;">20th Oct, 2020, 10:30 am</p>
+  <p class="card-text" style="color: mintcream;">Salary Package: NA.</p>
+  <small class="card-text" style="color: mintcream;">Vacancies: 3</small>
+  </div>
+  <div class="card-body" >
+    <h5 class="card-text">Hiring status</h5>
+    <p class="card-text alignright"><button style="background: transparent;border: none !important;"  (click)="view()"><i class="arrow up"></i></button></p>
+
+  </div>
+</div> -->
+

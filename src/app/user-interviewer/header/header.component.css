@@ -1,0 +1,52 @@
+
+::ng-deep .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px !important;
+  height: 55px;
+  padding: 0;
+  margin-right: 0;
+  background-color: transparent;
+  background-color: #1D222F !important;
+}
+::ng-deep .app-header{
+
+  background-color:#2d3444 !important;
+  border-bottom: 1px solid #2d3444;
+}
+
+.dropbtn {
+  background-color: #2d3444;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #2d3444;}

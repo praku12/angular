@@ -1,0 +1,65 @@
+
+
+
+  <app-sidebar class="sidebar-interviwee d-md-block">
+    <div class="d-flex flex-column justify-content-between sidebarMain-div">
+      
+       <div class="pt-3">
+           <div class="d-flex flex-column justify-content-around">
+               <div class="py-2 m-2 sidebarMain-home-icon-outerDiv">
+                   <div class="sidebarMain-home-icon" [routerLink]="['/user-interviewer/home']">
+                       <img src="assets/img/Home_Active.png" style="height: 48px;" alt="homepage">
+                   </div>
+               </div>
+               <div class="py-1 m-1 sidebarMain-home-icon-outerDiv" [routerLink]="['/user-interviewer/ongoingWalkin']">
+                   <div class="sidebarMain-home-icon">
+                       <img src="assets/img/Walkin_Inactive_White.png"  style="height: 48px;" alt="Walkin">
+                   </div>
+               </div>
+               <!-- <div class=" p-1 m-1 sidebarMain-home-icon-outerDiv">
+                   <div class="sidebarMain-home-icon">
+                       <img src="assets/img/Frame.png" style="height: 48px;" alt="group">
+                   </div>
+               </div>
+               <div class="p-1 m-1 sidebarMain-home-icon-outerDiv">
+                   <div class="sidebarMain-home-icon">
+                       <img src="assets/img/Frame.png" style="height: 48px;"  alt="Test">
+                   </div>
+               </div>
+               <div class="p-1 m-1 sidebarMain-home-icon-outerDiv">
+                   <div class="sidebarMain-home-icon">
+                       <img src="assets/img/Frame.png" style="height: 48px;"  alt="Test">
+                   </div>
+               </div>
+               <div class="p-1 m-1 sidebarMain-home-icon-outerDiv">
+                   <div class="sidebarMain-home-icon">
+                       <img src="assets/img/Frame.png" style="height: 48px;"  alt="Test">
+                   </div>
+               </div> -->
+           </div>
+       </div>
+       <div class="p-1 pb0">
+           <div>
+               <div class="d-flex flex-column justify-content-around sidebar-bottom-icons-flexDiv" style="margin-bottom: 200px;">
+                   <div class="p-1 m-1 sidebar-bottom-icons-outerDiv">
+                       <div class="sidebarMain-home-icon">
+                           <!-- <img src="../../../assets/img/icons/test.png" alt="Test"> -->
+                           <i class="fa fa-bell-o color-white fontSize-20" aria-hidden="true">
+                               </i>
+                           <span class="badge badge-danger sidebar-bottom-icons-badge">4</span>
+   
+                       </div>
+                   </div>
+                   <div class="p-1 m-1 sidebar-bottom-icons-outerDiv">
+                       <div class="sidebarMain-home-icon">
+                           <!-- <img src="../../../assets/img/icons/subs.png" alt="Subscription"> -->
+                           <i class="fa fa-question-circle-o color-white fontSize-20" aria-hidden="true"></i>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+   
+   </app-sidebar>
+   

@@ -1,0 +1,71 @@
+<div>
+    <p>&nbsp;
+    </p> 
+    </div>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  
+    <div class="app-body">
+        <main class="main d-flex align-items-center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-10 mx-auto">
+                <div class="card-group">
+                  <div class="card">  
+                    <div class="hero-image">
+                      <div class="text-block form-group">
+                        <img src="assets\img\DXWalkin helps you find the perfect Hire _.png" style="width:100%;" >
+                        <h4 style="color:rgb(237, 237, 243)" class="responsive">Our solutions drive the future of hiring.</h4>
+                      </div>
+                    </div>
+            
+                </div>
+                
+                  <div class="card py-1 px-1">
+                    <div class="card-body ">
+                        <div class="imgcontainer">
+                          <img src="assets\img\logo.png" style="padding-top:30%;" >
+                        </div>
+                        <div class="a" >
+                          <h3> {{title}}</h3>
+                      </div>
+                        
+                        <form #userForm="ngForm" (ngSubmit)="onSubmit()" >
+                            <div style="text-align:center;">
+                                <ng-otp-input  (onInputChange)="onOtpChange($event)" [config]="{length:5}" ></ng-otp-input><br>
+
+                            </div>
+
+                            
+                            <!-- {{userForm.value | json}} -->
+                          <!-- {{userForm.form.valid}} -->
+                     
+                   
+                        <div class="row">
+                 
+                      <div class="col-sm-12">
+                        <span class="form-group" style="text-align:right;">
+                            <p>Don’t receive the OTP?<a href="" style= "color: red;font-size: xx-small;"> RESEND OTP</a></p>
+                      </span>
+                    </div>
+                      </div><br>
+                     
+                
+                        <div class="row">
+                          <div class="col-12" style="text-align: center;">
+                            <button [disabled]="userForm.form.invalid" type="submit" class="btn btn-primary btn-lg px-7 btn-block" style="background-color: blue;"  >verify</button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+  
+      
+      

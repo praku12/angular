@@ -1,0 +1,57 @@
+<header1></header1>
+<div class="app-body">
+    <sidebar1></sidebar1>
+     <!-- Main content -->
+     <main class="main">
+       <!-- Breadcrumb -->
+       <!-- breaking change 'cui-breadcrumb' -->
+
+   
+       <div class="container-fluid-main">
+         <router-outlet>
+         
+          
+         </router-outlet>
+       </div>
+       <div>
+        <img  class="bubbles_container" src="assets/img/FAQ_Circle.png"> 
+      </div><!-- /.container-fluid -->
+       <!-- <p><button mat-button (click)="sidenav.toggle()">Toggle</button></p> -->
+     </main>
+     <mat-button-toggle-group  name="fontStyle" aria-label="Font Style" vertical>
+      <mat-button-toggle class="right_menu"  value="bold" mat-button (click)="drawer.toggle()"><img src="assets/img/Slider Arrow Right.png">
+      </mat-button-toggle>
+      <mat-button-toggle class="right_menu" ></mat-button-toggle>
+      <mat-button-toggle class="right_menu" value="italic"><img src="assets/img/chat _mess.png"></mat-button-toggle>
+      <mat-button-toggle class="right_menu" ></mat-button-toggle>
+      <mat-button-toggle class="right_menu" value="underline"><img src="assets/img/CandidatesGroup.png"></mat-button-toggle>
+      <mat-button-toggle class="right_menu" ></mat-button-toggle>
+      <mat-button-toggle class="right_menu" value="underline"><img src="assets/img/Code.png"></mat-button-toggle>
+      <mat-button-toggle class="right_menu" ></mat-button-toggle>
+      <mat-button-toggle class="right_menu" value="underline"><img src="assets/img/Attach_File.png"></mat-button-toggle>
+      
+
+    </mat-button-toggle-group>
+     <mat-drawer-container class="example-container" autosize>
+       <!-- <div class="example-sidenav-content">
+      <button type="button" mat-button (click)="drawer.toggle()">
+        Toggle sidenav
+      </button>
+   
+    </div> -->
+      <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+        <mat-tab-group animationDuration="0ms">
+          <br>
+          <br>
+          <br>
+          
+          <mat-tab label="Chat Rooms">&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="btn btn" style="background-color:#2D3444 ;color: white;">Open Editor</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="btn btn" style="background-color:#2D3444;color: white;">Feedback</button></mat-tab>
+          <mat-tab label="Candidates"> </mat-tab>
+         
+        </mat-tab-group>
+      </mat-drawer>  
+    </mat-drawer-container>
+    
+    
+ </div>

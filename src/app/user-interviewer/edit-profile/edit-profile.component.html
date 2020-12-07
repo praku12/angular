@@ -1,0 +1,73 @@
+
+<div class="card text-center">
+<div class="card-body">
+<div class="container">
+    <div class="signup-form">
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+            <h5>Edit Profile</h5>
+            <div class="form-group">
+                <div class="col-sm-12" align="center">
+                    <div class="form-group">
+                        <label class="hoverable" for="fileInput">
+                            <img [src]="url ? url : 'https://static.thenounproject.com/png/2072304-200.png'">
+
+
+                            <div class="hover-text"><strong><i  style="color: rgb(134, 11, 248);width:100%;"class="fa fa-edit"></i>Choose file</strong></div>
+                            <div class="background" ></div>
+                          </label>
+                          <br/>
+                          <input id="fileInput" type='file' (change)="onSelectFile($event)">
+                          <button *ngIf="url" (click)="delete()" class="delete">delete</button>      
+                </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="pull-left">First Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="fname" name="fname" placeholder="First Name" required="required">
+                    </div>
+                    <div class="col-sm-6">
+                        <label class="pull-left">Last Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="lname" name="lname" placeholder="Last Name" required="required"></div>
+                </div>        	
+            </div>
+            <br>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label class="pull-left">Email</label>
+                        <input type="text" class="form-control" [(ngModel)]="email" name="email" placeholder="Email" required="required">
+                    </div>
+                    
+                    <div class="col-sm-6">
+                        <label class="pull-left">Phone Number</label>
+                        <input type="text" class="form-control" name="phone" [(ngModel)]="phone" placeholder="Phome Number" required="required"></div>
+                </div>        	
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="pull-left">Headline</label>
+                <input type="email" class="form-control" [(ngModel)]="headline" name="headline" placeholder="Headline" required="required">
+            </div>
+            <br>
+            <div class="form-group">
+                <label class="pull-left">About You</label>
+                <input type="text" class="form-control" name="aboutYou" [(ngModel)]="aboutYou" placeholder="About You" required="required">
+            </div>
+            <br>
+          
+            <div class="form-group">
+                <button type="submit" class="form-control" class="btn btn-primary btn-lg" style="width: 100%;background-color: #364DFF;">Save</button>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>

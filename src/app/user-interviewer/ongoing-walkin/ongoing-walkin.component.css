@@ -1,0 +1,38 @@
+.box{
+position: absolute;
+width: 30%;
+height:auto;
+background: #FFFFFF;
+/* Placeholder color */
+/* text-align: right; */
+text-align: center;
+margin-left:60%;
+border: 1px solid rgba(0, 0, 0, 0.2);
+box-sizing: border-box;
+border-radius: 8px;
+margin-top: 0;
+}
+.card-body{
+
+    height:auto;
+}
+
+.live{
+text-align: center;color: ghostwhite;position: absolute;
+width: 73px;
+height: 30px;
+right: 19px;
+
+/* Red (CF1212) */
+background: #CF1212;
+border-radius: 6px;
+}
+.card{
+background: #1D222F;
+color:white;
+
+}
+.box{
+    background: #2d3444;
+  
+}

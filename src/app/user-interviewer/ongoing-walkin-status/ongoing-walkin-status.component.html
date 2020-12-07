@@ -1,0 +1,174 @@
+<br>
+<div class="card mb-3" style="width:80%;margin-left:10%;height:auto;">
+    <img class="card-img-top" src="assets/img/ongoing_candidate1 (5).png" alt="Card image cap">
+    <div class="card-img-overlay">
+        <h5 class="live"><span style="font-size: large;">&#8226;</span>Live</h5>
+    </div>
+    <div class="card-body">
+      <p style="text-align:left;">
+        <strong><img src="assets/img/Job_White.png"> &nbsp; Android Developer</strong>
+        <span style="float:right;">
+            <strong><i class="fa fa-map-marker" aria-hidden="true"></i> &nbsp;Banglore</strong>
+        </span>
+    </p>
+    <div> 
+
+   
+      <p class="box"><strong>Techincal Interview</strong><br><small>Enter into the room and start taking interview!</small><br><br>
+        <button class="btn btn-primary btn-md" style="background-color:#364DFF;width:70%;
+        height:30%;">Enter</button><br><br></p>
+      <p class="card-text">Skills: Java, Android Studio..</p>
+      <p class="card-text"><small class="text-muted"><strong>Experience: 0-3 Years</strong></small></p>
+      <p class="card-text"><small class="text-muted"><strong>Vacancies: 3</strong></small></p>
+      <p class="card-text"><small class="text-muted"><strong>Salary Package: NA</strong></small></p>
+      <label class="switch"><input type="checkbox" id="togBtn"><div class="slider round"></div></label>
+
+
+      
+    </div>
+    <br>
+    <br>
+
+
+    <form>
+        <div class="card" style="width:100%;" >
+          <div class="card-body" >
+        
+              <div class="form-group container">
+                  <h5 class="alignleft">Candidate List</h5>
+                  <a  (click)="print()"><p class="pull-right"style="color: royalblue;"><img src="assets/img/print.png"><strong>Print</strong></p></a>
+
+                  <p class="pull-right"><input [(ngModel)]="name" name="name"  type="text" placeholder="Search by name" style="background-color: #2d3444;height:40px;width:70%"><button class="btn btn-primary btn-md" style="background-color:#364DFF;">
+                      <i class="fa fa-search"></i></button></p>
+                  <div id="print-section" class="table-responsive">
+                  <table class="form-group table" style="min-width:0px !important; " >
+                    <thead>
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Name</th>
+                        <th scope="col"> Email</th>
+                         <th scope="col" >Resume</th>
+                        <th scope="col">Headline</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Move To</th>
+                  
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr *ngFor="let customer of candidates | customerEmailFilter:name;let i = index">
+        
+                        <td scope="row">{{i+1}}</td>
+                        <td>{{customer.name}}</td>
+                        <td>{{customer.email}}</td>
+                        <td><a href="#">View</a></td>
+                        <td>Angular fresher</td>
+                        <!-- <td ><select id="green" class="form-control">
+                          <option ><strong>Select</strong></option>
+                          <option ><span>&#10004;</span><strong>selected</strong></option>
+                          <option><span>&#10060;</span>rejected</option><option><span>&#9995;</span><strong>Hold</strong></option></select>
+                        </td>
+                        <td ><select id="green" class="form-control">
+                          <option ><strong>Select</strong></option>
+                          <option ><strong>HR Round</strong></option>
+                          <option>Technical Round1</option><option><strong>Technical Round2</strong></option></select>
+                        </td> -->
+                        <!-- <td><select id="color" class="form-control" (change)="color()" >
+                          <option ><strong><i class="icon-play"></i> Select</strong></option>
+                          <option *ngFor="let status of candidateStatus" [ngValue]="status"><strong>{{status.status}}</strong></option>
+                          </select>
+                        </td> -->
+                        <td>
+        <!-- 
+                      
+                          <mat-form-field appearance="fill">
+                            <mat-label>Choose an option</mat-label>
+                            <mat-select >
+                              <mat-option value="option1">Option 1</mat-option>
+                              <mat-option value="option2" >Option 2</mat-option>
+                              <mat-option value="option3">Option 3</mat-option>
+                            </mat-select>
+                          </mat-form-field> -->
+                          <mat-form-field appearance="fill">
+                            <select id="green_{{i}}" class="color" select="selected"   matNativeControl (change)="setColor($event.target.value,i);"   >
+                              <option ><strong><i class="icon-play"></i>&nbsp;&nbsp;&nbsp;&nbsp;Select</strong></option>
+                              <option *ngFor="let status of candidateStatus ; let i = index"  value="{{status.status}}" id="symbol"><strong>&nbsp;&nbsp;&nbsp;&nbsp;{{status.status}}</strong></option>
+                            </select>
+                          </mat-form-field>
+        
+        
+                      </td>
+                      
+                        <td >
+                          <mat-form-field appearance="fill">
+                          <select id="green" matNativeControl>
+                          <option ><strong>&nbsp;&nbsp;Select</strong></option>
+                          <option *ngFor="let status of MoveTo" [ngValue]="status" ><strong>&nbsp;&nbsp;{{status.status}}</strong></option>
+                          </select>
+                        </mat-form-field>
+                        </td>
+                        
+                      </tr>
+                      <!-- <tr>
+                          <td scope="row">2</td>
+                          <td>prakash</td>
+                          <td>prakash@gmail.com</td>
+                          <td>Resume.pdf</td>
+                          <td>Angular fresher</td>
+                          <td ><select id="green" class="form-control"><option >selected</option>
+                            <option>rejected</option><option>Hold</option></select></td>
+                          <td><select id="black" class="form-control"><option>HR Round</option>
+                            <option>Technical Round</option></select></td>
+                        </tr>
+                        <tr>
+                          <td>3</td>
+                          <td>prakash</td>
+                          <td>prakash@gmail.com</td>
+                          <td>Resume.pdf</td>
+                          <td>Angular fresher</td>
+                          <td ><select id="green" class="form-control"><option >selected</option>
+                            <option>rejected</option><option>Hold</option></select></td>
+                          <td><select id="black" class="form-control"><option>HR Round</option>
+                            <option>Technical Round</option></select></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">4</td>
+                          <td>prakash</td>
+                          <td>prakash@gmail.com</td>
+                          <td>Resume.pdf</td>
+                          <td>Angular fresher</td>
+                          <td ><select id="green" class="form-control"><option >selected</option>
+                            <option>rejected</option><option>Hold</option></select></td>
+                          <td><select id="black" class="form-control"><option>HR Round</option>
+                            <option>Technical Round</option></select></td>
+                        </tr>
+                        <tr>
+                          <td scope="row">5</td>
+                          <td>prakash</td>
+                          <td>prakash@gmail.com</td>
+                          <td>Resume.pdf</td>
+                          <td>Angular fresher</td>
+                          <td ><select id="green" class="form-control"><option >selected</option>
+                            <option>rejected</option><option>Hold</option></select></td>
+                          <td><select id="black" class="form-control"><option>HR Round</option>
+                            <option>Technical Round</option></select></td>
+                        </tr> -->
+                 
+                    </tbody>
+                  </table>
+              </div>
+                </div>
+          
+          </div>
+        </div>
+        
+        </form>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+  

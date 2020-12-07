@@ -1,0 +1,94 @@
+<div>
+  <p>&nbsp;
+  </p> 
+  </div>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <div class="app-body">
+      <main class="main d-flex align-items-center">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-10 mx-auto">
+              <div class="card-group">
+                <div class="card">  
+                  <div class="hero-image">
+                    <div class="text-block form-group">
+                      <img src="assets\img\DXWalkin helps you find the perfect Hire _.png" style="width:100%;" >
+                      <h4 style="color:rgb(237, 237, 243)" class="responsive">Our solutions drive the future of hiring.</h4>
+                    </div>
+                  </div>
+          
+              </div>
+              
+                <div class="card py-1 px-1">
+                  <div class="card-body ">
+                      <div class="imgcontainer">
+                        <img src="assets\img\logo.png" style="padding-top:30%;" >
+                      </div>
+                      <div class="a" >
+                        <h3> {{text}}</h3>
+                    </div>
+                      
+                      <form #userForm="ngForm" (ngSubmit)="onSubmit()" >
+                        <!-- {{userForm.value | json}} -->
+                        <!-- {{userForm.form.valid}} -->
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <div class="form-group">
+                            <label for="name">Email</label>
+                            <input  [(ngModel)]="email"  #emailfield="ngModel" type="email" class="form-control"
+                             [class.is-invalid]="emailfield.invalid && emailfield.touched" name="email"  placeholder="Emai" 
+                              required [pattern]="emailpattern" >
+                            <div *ngIf="emailfield.errors && (emailfield.invalid || emailfield.touched )">
+                              <!-- <small class="text-danger" *ngIf="emailfield.errors.required" >Email is required</small> -->
+                              <small class="text-danger" *ngIf="emailfield.errors.pattern">Please Enter Proper email Format</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-sm-12"  >
+                          <label for="name">Password</label>
+                          <div class="form-group" >
+                            <input  type="password" #passfield="ngModel" class="form-control" name="password" [(ngModel)]="password"  
+                             placeholder="Password" [class.is-invalid]="passfield.invalid && passfield.touched" id="password" required [pattern]="passwordpattern">
+                            <button class="show-button" type="button" (click)="passwordShow()" id="display"><i class="fas fa-eye-slash"></i></button>
+                            <!-- <small class="text-danger" [class.d-none]="passfield.valid || passfield.untouched">Password field is required</small> -->
+                            <div *ngIf="passfield.errors && (passfield.invalid || passfield.touched )">
+                              <!-- <small class="text-danger" *ngIf="emailfield.errors.required" >Email is required</small> -->
+                              <small class="text-danger" *ngIf="passfield.errors.pattern">Password must contain atleast 8  characters</small>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div><!--/.row-->
+                 
+                      <div class="row">
+               
+                    <div class="col-sm-12">
+                      <span class="form-group">
+                      
+                      <a  href="#forgotPassword"><p style="color:rgb(226, 17, 17)">Forgot Password?</p></a>
+                    </span>
+                  </div>
+                    </div>
+              
+                      <div class="row">
+                        <div class="col-12" style="text-align: center;">
+                          <button [disabled]="userForm.form.invalid" type="submit" class="btn btn-primary btn-lg px-7 btn-block" style="background-color: blue;"  >Login</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    
+    

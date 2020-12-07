@@ -1,0 +1,81 @@
+.button{
+position: absolute;
+width:15%;
+height:10%;
+/* left: 451px;
+top: 590px; */
+margin-top: 57%;
+margin-left: 1%;
+text-align: center;
+background: rgba(255, 255, 255, 0.5);
+border: 1px solid #FFFFFF;
+box-sizing: border-box;
+border-radius: 8px;
+}
+.rightsidemenu{
+position: absolute;
+width:2.5%;
+height:30%;
+left: 97.5%;
+top:12%;
+background: #000000;
+border-radius: 10px 0px 0px 10px;
+}
+.alignleft {
+float: left;
+width:33.33333%;
+text-align:left;
+}
+.aligncenter {
+float: left;
+width:33.33333%;
+text-align:right;
+}
+.alignright {
+float: left;
+width:33.33333%;
+text-align:right;
+}
+body{
+background:#ddd;
+}
+.form-control-borderless {
+border: none;
+}
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+border: none;
+outline: none;
+box-shadow: none;
+}
+#green{
+color: rgb(60,214,133,1);
+}
+#green option { color: black; }
+#green option:first-child{
+    color: rgb(60,214,133,1);
+}
+
+#black{
+    color: black;   
+}
+
+#black option { color: black; }
+#black option:first-child{
+    color: black;
+}
+.card{
+    background: #1D222F;
+    color:white;
+    
+    }
+    .box{
+        background: #2d3444;
+      
+    }
+.table{
+    color:white;
+  
+}
+select{
+    background-color: #2d3444;
+}

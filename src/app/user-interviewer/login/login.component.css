@@ -1,0 +1,92 @@
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(assets\img\Group.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 0 0 0 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 25%;
+  border-radius: 50%;
+}
+.avatar {
+  position: relative;
+  display: inline-block;
+  width: 36px;
+  height: 50%;
+}
+div.a {
+  text-align: center;
+}
+
+.card-body
+{
+  padding-bottom: 28%;
+  height: 10%;
+}
+
+form
+{
+width:80%;
+padding-left: 20%;
+}
+.card-group{
+  
+  padding-bottom: 10%;
+  width:98%;
+
+
+}
+
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+
+}
+input{
+  width:100%;
+  }
+  .show-button{
+    position:absolute;
+    right:22px;
+    top: 32px;
+    border:0px;
+    background-color:transparent;
+  }
+

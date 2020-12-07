@@ -1,0 +1,280 @@
+#menu_screen>.row {
+  min-height: 100vh;
+}
+.sidebar-interviwee{
+  /* width: 80%; */
+  height: 100%;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.body-header {
+  height: 10vh;
+  background-color: #f6f6f6;
+}
+
+.body-ongoingWalkin-div {
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid #596dfe;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+  background-color: #eef0ff;
+}
+
+.body-ongoingWalkin-subdiv1 {
+  text-align: center;
+  font-weight: 900;
+  color: #364dff;
+  font-size: 1.2rem;
+}
+
+.body-ongoingWalkin-subdiv2 {
+  text-align: center;
+}
+
+.body-upcomingWalkin-div {
+  padding: 15px;
+  border-radius: 25px;
+  border: 2px solid #e5e5e5;
+  background-color: white;
+}
+
+.body-upcomingWalkin-subdiv1 {
+  text-align: center;
+}
+
+.body-upcomingWalkin-subdiv2 {
+  text-align: center;
+}
+
+.mt5vh {
+  margin-top: 5vh;
+}
+
+.table-div {
+  overflow-y: auto;
+  height: 300px;
+  border-radius: 20px;
+}
+
+.table-div thead th {
+  position: sticky;
+  top: 0;
+  background-color: #828a9d;
+  color: white;
+}
+
+.body-ongoingWalkin-tbody {
+  overflow-y: scroll;
+  height: 300px;
+}
+
+.table {
+  border: 1px solid #e5e5e5;
+}
+
+.hiringStatus-col31-div {
+  padding: 18px;
+  border-radius: 10px;
+  border: 3px solid #2989ff;
+  background-color: #f0f7ff;
+}
+
+.hiringStatus-col31-subdiv1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 8vh;
+  color: #2989ff;
+}
+
+.hiringStatus-col31-subdiv2 {
+  text-align: center;
+}
+
+.hiringStatus-col32-div {
+  padding: 18px;
+  border-radius: 10px;
+  border: 3px solid #e73eb7;
+  background-color: #fdf1fa;
+}
+
+.hiringStatus-col32-subdiv1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 8vh;
+  color: #e73eb7;
+}
+
+.hiringStatus-col32-subdiv2 {
+  text-align: center;
+}
+
+.hiringStatus-col33-div {
+  padding: 18px;
+  border-radius: 10px;
+  border: 3px solid #4dc6d4;
+  background-color: #f3fbfc;
+}
+
+.hiringStatus-col33-subdiv1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 8vh;
+  color: #4dc6d4;
+}
+
+.hiringStatus-col33-subdiv2 {
+  text-align: center;
+}
+
+.hiringStatus-col34-div {
+  padding: 18px;
+  border-radius: 10px;
+  border: 3px solid #fcb406;
+  background-color: #fffaee;
+}
+
+.hiringStatus-col34-subdiv1 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 8vh;
+  color: #fcb406;
+}
+
+.hiringStatus-col34-subdiv2 {
+  text-align: center;
+}
+
+.ongoingWalkins-div {
+  background-image: url('/assets/img/ongoing-baclground.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  color: white;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.mt3vh {
+  margin-top: 3vh;
+}
+
+.hiringStatus-h5 {
+  margin: 2vh 0px;
+}
+
+.pl2vw {
+  padding-left: 2vw;
+}
+
+.pr2vw {
+  padding-right: 2vw;
+}
+
+.pl0 {
+  padding-left: 0px;
+}
+
+.pr0 {
+  padding-right: 0px;
+}
+
+.sidebarMain-div {
+  height: 100%;
+  background-color:#1D222F;
+}
+
+.Body-col11 {
+  background-color: #f6f6f6;
+}
+
+.hiringStatusMainDiv {
+  background-color: white;
+  padding: 0vh 5vh 5vh 5vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+table>tbody {
+  background-color: white;
+}
+
+.mt12px {
+  margin-top: 12px;
+}
+
+.color-white {
+  color: white;
+}
+
+.body-header-profileDiv {
+  background-color: #313643;
+  padding: 1vh;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.logoDiv {
+  text-align: center;
+  margin-top: 1vh;
+}
+
+.sidebarMain-home-icon {
+  text-align: center;
+  padding: 1vh;
+}
+
+.sidebarMain-home-icon-outerDiv {
+  background-color:#1D222F;
+  border-radius: 15px;
+}
+
+.sidebar-bottom-icons-flexDiv {
+  background-color: #364dff;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 8px 8px 20px 8px;
+}
+
+.sidebar-bottom-icons-outerDiv {
+  background-color: #586bff;
+  border-radius: 15px;
+}
+
+.pb0 {
+  padding-bottom: 0px !important;
+}
+
+.fontSize-20 {
+  font-size: 20px;
+}
+
+.sidebar-bottom-icons-badge {
+  position: absolute;
+  margin-top: -8px;
+}
+
+@media (max-width:800px) {
+  .hiringStatus-col31-div,
+  .hiringStatus-col32-div,
+  .hiringStatus-col33-div,
+  .hiringStatus-col34-div {
+      padding: 0px;
+  }
+}
+
+@media (max-width:500px) {
+  .hiringStatus-col31-div,
+  .hiringStatus-col32-div,
+  .hiringStatus-col33-div,
+  .hiringStatus-col34-div {
+      padding: 0px;
+      margin-bottom: 2vh;
+  }
+  .body-upcomingWalkin-div {
+      margin-bottom: 5vh;
+  }
+}
